@@ -3,21 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>My Personal Streaming Site</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    iframe {
+      max-width: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Streaming: Inception</h1>
+  <h1>Streaming: Inception (MKV)</h1>
 
-  <video
-    id="player"
-    controls
-    width="640"
-    style="max-width:100%; height:auto;"
-  >
-    <source
-      src="https://drive.google.com/uc?export=download&id=1pxyupX9vV0O8YuDcfGPSxkTnORdFlmx8"
-      type="video/mp4"
-    >
-    Your browser does not support the video tag.
-  </video>
+  <!-- Google Drive preview iframe for MKV -->
+  <iframe
+    src="https://drive.google.com/file/d/1pxyupX9vV0O8YuDcfGPSxkTnORdFlmx8/preview"
+    width="800"
+    height="450"
+    allow="autoplay; encrypted-media"
+  ></iframe>
+
+  <p>If nothing appears, make sure your Drive file’s sharing is set to “Anyone with the link can view.”</p>
 </body>
 </html>
